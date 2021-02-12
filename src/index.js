@@ -1,12 +1,25 @@
 
 exports.min = function min (array) {
-  return 0;
+    if (array == 0 || array == null) {
+        return 0;
+        } else {
+        return Math.min(...array);
+        }
 }
 
 exports.max = function max (array) {
-  return 0;
+    if (array == 0 || array == null) {
+        return 0;
+        } else {
+        return Math.max(...array);
+        }
 }
 
 exports.avg = function avg (array) {
-  return 0;
+    if (array == 0 || array == null) {
+        return 0;
+        } else {return array.reduce(function(a,b){
+            return a + b
+          }, 0)/array.length;
+    }
 }
